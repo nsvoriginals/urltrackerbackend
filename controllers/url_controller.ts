@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const router: Router = express.Router();
-const baseUrl: string | undefined = process.env.BASEURI || 'http://localhost:3003';
+const baseUrl: string | undefined = 'https://urltracker.onrender.com';
 
 const generateUniqueShortId = async (): Promise<string> => {
     let shortId: string;
